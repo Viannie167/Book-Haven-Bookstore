@@ -1,0 +1,122 @@
+header {
+    background-color: #2E2E4E;  /* banner color THIS IS THE HEADER THING AT TOP !!! */
+    color: #FFFFFF;               /* text color */
+    padding: 20px;              /* space inside the banner */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* space between logo+title and nav */
+    gap: 20px;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.faq h3 {
+    color: #2E2E4E;      /* question title color like what are ur operations */
+    font-size: 22px;     
+    margin-bottom: 5px;  /* small spacing */
+}
+nav ul {
+    list-style: none;       
+    margin: 0;
+    padding: 0;
+    display: flex;          /* makes the links line up in a row */
+    justify-content: center; /* centers the whole menu */
+    gap: 20px;              /* space between each link whatevs*/
+}
+
+nav ul li a {
+    text-decoration: none;  
+    color: #FFFFFF;           /* text color for FAQ ABOUT etc */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #5C2E5C;         /* highlight when mouse goes over */
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+/* this is logo and like make it to the side REFERENCE THIS ilyssa^^*/
+body {
+    background-color: #FFFFFF;
+    /* uhh this one of the bgs color*/
+    font-family: Arial, sans-serif;
+    p {
+  color: #2E2E4E; /* grr this is text btw not bg stuff*/
+}
+}
+
+.faq {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.MeCenter {
+    width: 470px;
+    height: auto;
+    
+    display: block; 
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 2.5em; 
+    font-weight: bold;
+    color: #2E2E4E; 
+    margin-bottom: 0.5em; 
+}
+
+h3 {
+    font-size: 1.5em; 
+    font-weight: 600; 
+    color: #2E2E4E;
+    margin-top: 1.5em; 
+}
+
+/* BELLOW IS FOR GALLERY!!! */
+
+.Gallerystuff {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.GalleryImages {
+    
+    width: calc(33.333% - 20px); 
+    
+    height: auto;
+    
+    margin: 0; 
+}
+
+@media (max-width: 768px) {
+    .GalleryImages {
+        width: calc(50% - 15px); 
+    }
+}
+
+/* End of gallery modifcations */
+
+.footerlogo {
+    width: 400px;
+    height: auto;
+    
+    display: block; 
+    
+    margin-left: auto;
+    margin-right: auto;
+}
