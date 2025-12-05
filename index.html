@@ -10,6 +10,9 @@
     <header>
          <img src="newlogo.png" alt="Book Haven Bookstore Logo" class="logo">
         <h1>Book Haven Bookstore</h1>
+        <button class="hamburger" aria-label="Toggle navigation">
+        ☰
+    </button>
         <nav>
             <ul>                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -54,8 +57,17 @@
 </section>
              <img src="newlogo.png" alt="Book Haven Bookstore Logo" class="footerlogo">
 
-    <footer>
-        <p>© 2025 Book Haven Bookstore | All Rights Reserved</p>
-    </footer>
+   <footer>
+    <section id="subscribe-section">
+        <h3>Stay Updated!</h3>
+        <form id="subscribe-form">
+            <input type="email" id="email-input" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-message" style="display:none; color: #FFFFFF; font-weight: bold;">Thank you for subscribing to Book Haven!</p>
+    </section>
+    
+    <p>© 2025 Book Haven Bookstore | All Rights Reserved</p>
+</footer>
 </body>
 </html>

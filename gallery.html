@@ -8,10 +8,16 @@
 </head>
 <body>
     <header>
-         <img src="newlogo.png" alt="Book Haven Bookstore Logo" class="logo">
-        <h1>Our Gallery</h1>
-        <nav>
-            <ul>
+    <img src="newlogo.png" alt="Book Haven Bookstore Logo" class="logo">
+         <h1>Our Gallery</h1>
+         </div>
+
+    <button class="hamburger" aria-label="Toggle navigation">
+        ☰
+    </button>
+
+    <nav>
+        <ul>
                 <li><a href="index.html">Homepage</a></li>    
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -21,25 +27,70 @@
     </header>
 
     <main>
-        <h2>Gallery</h2>
-        <div class="Gallerystuff">
-                <h3>Below are images of what we have here!</h3>
+    <div id="cart-info" style="text-align: right; margin-bottom: 20px;">
+        <button id="view-cart-btn">View Cart (0)</button>
+    </div>
+    <h2>Gallery</h2>
+    
+    <div class="Gallerystuff">
+        <h3>Below are images of what we have here!</h3>
+        
+        <div class="GalleryItem"> 
+            <img src="Client3_ToteBag.png" alt="Book Haven Bookstore Tote" class="GalleryImages">
+            <button class="add-to-cart-btn" data-item="Book Haven Tote">Add to Cart</button>
         </div>
-                <img src="Client3_ToteBag.png" alt="Book Haven Bookstore Tote" class="GalleryImages">
-                <img src="Client3_Magazine1.png" alt="Book Haven Bookstore Magazine" class="GalleryImages">
-                <img src="Client3_Magazine2.png" alt="Book Haven Bookstore Magazine" class="GalleryImages">
-                <img src="Client3_Magazine3.png" alt="Book Haven Bookstore Magazine" class="GalleryImages">
-                <img src="Client3_Book1.png" alt="Book Haven Bookstore Book" class="GalleryImages">
-                <img src="Client3_Book2.png" alt="Book Haven Bookstore Book" class="GalleryImages">
-                <img src="Client3_Book3.png" alt="Book Haven Bookstore Book" class="GalleryImages">
-                <img src="Client3_Stickers.png" alt="Book Haven Bookstore Stickers" class="GalleryImages">
+        
+        <div class="GalleryItem">
+            <img src="Client3_Magazine1.png" alt="Book Haven Bookstore Magazine" class="GalleryImages">
+            <button class="add-to-cart-btn" data-item="Magazine 1">Add to Cart</button>
+        </div>
+        
+        <div class="GalleryItem">
+            <img src="Client3_Magazine2.png" alt="Book Haven Bookstore Magazine" class="GalleryImages">
+            <button class="add-to-cart-btn" data-item="Magazine 2">Add to Cart</button>
+        </div>
+        
+        <div class="GalleryItem">
+            <img src="Client3_Magazine3.png" alt="Book Haven Bookstore Magazine" class="GalleryImages">
+            <button class="add-to-cart-btn" data-item="Magazine 3">Add to Cart</button>
+        </div>
 
-            
+        <div class="GalleryItem">
+            <img src="Client3_Book1.png" alt="Book Haven Bookstore Book" class="GalleryImages">
+            <button class="add-to-cart-btn" data-item="Book 1">Add to Cart</button>
         </div>
-    </main>
+
+        <div class="GalleryItem">
+            <img src="Client3_Book2.png" alt="Book Haven Bookstore Book" class="GalleryImages">
+            <button class="add-to-cart-btn" data-item="Book 2">Add to Cart</button>
+        </div>
+
+        <div class="GalleryItem">
+            <img src="Client3_Book3.png" alt="Book Haven Bookstore Book" class="GalleryImages">
+            <button class="add-to-cart-btn" data-item="Book 3">Add to Cart</button>
+        </div>
+        
+        <div class="GalleryItem">
+            <img src="Client3_Stickers.png" alt="Book Haven Bookstore Stickers" class="GalleryImages">
+            <button class="add-to-cart-btn" data-item="Stickers">Add to Cart</button>
+        </div>
+        
+    </div>
+</main>
+    
 
     <footer>
-        <p>© 2025 Book Haven Bookstore | All Rights Reserved</p>
-    </footer>
+    <section id="subscribe-section">
+        <h3>Stay Updated!</h3>
+        <form id="subscribe-form">
+            <input type="email" id="email-input" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-message" style="display:none; color: #FFFFFF; font-weight: bold;">Thank you for subscribing to Book Haven!</p>
+    </section>
+    
+    <p>© 2025 Book Haven Bookstore | All Rights Reserved</p>
+</footer>
+    <script src="script.js"></script>
 </body>
 </html>

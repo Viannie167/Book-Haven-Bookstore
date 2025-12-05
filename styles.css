@@ -40,6 +40,10 @@ nav ul li a:hover {
     color: #5C2E5C;         /* highlight when mouse goes over */
 }
 
+.hamburger {
+    display: none; /* Hides button on desktop by default */
+}
+
 .logo {
     width: 80px;
     height: auto;
@@ -170,3 +174,54 @@ h3 {
         text-align: center;
     }
 }
+
+.GalleryItem {
+    width: calc(33.333% - 20px); 
+    height: auto;
+    /* You can add a little padding/margin here if you want space around the item */
+    margin-bottom: 20px; 
+    text-align: center; /* Centers the button/text below the image */
+}
+
+.GalleryItem img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below the image */
+}
+
+@media (max-width: 768px) {
+    /* Change this rule to target the new wrapper */
+    .GalleryItem { 
+        width: calc(50% - 15px); /* Makes them 2-up on smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    /* ... existing rules ... */
+
+    .hamburger {
+        display: block; /* Show button on small screens */
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: #FFFFFF; /* White text color */
+        cursor: pointer;
+        z-index: 100; /* Ensure it's on top */
+    }
+
+    header nav {
+        /* Hide the entire navigation bar by default on mobile */
+        display: none; 
+        width: 100%;
+        order: 2; /* Put it below the logo/title */
+    }
+
+    /* This is the class the JavaScript toggles! */
+    header nav.active {
+        /* SHOW the navigation bar when the hamburger is clicked */
+        display: block; 
+        text-align: center;
+    }
+
+    /* ... rest of the media query rules ... */
+}
+

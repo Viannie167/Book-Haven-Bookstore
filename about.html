@@ -13,6 +13,9 @@
                              <!-- THIS IS LOGO DO NOT TOUCH. -->
 
         <h1>About Us</h1>
+        <button class="hamburger" aria-label="Toggle navigation">
+        ☰
+    </button>
         <nav>
             <ul>                    
                   <li><a href="faq.html">FAQ</a></li>
@@ -38,8 +41,26 @@
                  <img src="Client3_Notebook.png" alt="Book Haven Bookstore Mission" class="MeCenter">
 
     </main>
-    <footer>
-        <p>© 2025 Book Haven Bookstore | All Rights Reserved</p>
-    </footer>
+    <section id="feedback-section" style="padding: 20px 0;">
+    <h2>Customer Feedback</h2>
+    <form id="feedback-form">
+        <label for="feedback-text">Tell us what you think:</label><br>
+        <textarea id="feedback-text" rows="4" cols="50" required style="width: 100%; padding: 10px; margin-top: 5px;"></textarea><br>
+        <button type="submit" style="background-color: #5C2E5C; color: white; padding: 10px 15px; border: none; cursor: pointer; margin-top: 10px;">Submit Feedback</button>
+    </form>
+    <p id="feedback-message" style="display:none; color: #2E2E4E; font-weight: bold; margin-top: 10px;">Thank you for your valuable feedback!</p>
+</section>
+   <footer>
+    <section id="subscribe-section">
+        <h3>Stay Updated!</h3>
+        <form id="subscribe-form">
+            <input type="email" id="email-input" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-message" style="display:none; color: #FFFFFF; font-weight: bold;">Thank you for subscribing to Book Haven!</p>
+    </section>
+    
+    <p>© 2025 Book Haven Bookstore | All Rights Reserved</p>
+</footer>
 </body>
 </html>
